@@ -1,0 +1,39 @@
+shizuka_decision = {
+	is_shown = {
+		is_ai = no
+		NOT = {
+			has_modifier = modifier_shizuka
+		}
+	}
+	possible = {
+		is_ai = no
+		NOT = {
+			has_modifier = modifier_shizuka
+		}
+	}
+	when_taken = {
+		add_modifier = {
+			name = modifier_shizuka
+		}
+	}
+	ai_chance = {
+		base = 0
+	}
+}
+
+shizuka_removal_decision = {
+	is_shown = {
+		is_ai = no
+		has_modifier = modifier_shizuka
+	}
+	possible = {
+		is_ai = no
+		has_modifier = modifier_shizuka
+	}
+	when_taken = {
+		remove_modifier = modifier_shizuka
+	}
+	ai_chance = {
+		base = 0
+	}
+}
